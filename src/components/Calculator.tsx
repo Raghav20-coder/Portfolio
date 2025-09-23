@@ -1,5 +1,4 @@
 import { useCallback, useMemo, useState } from 'react';
-import { motion } from 'framer-motion';
 import { evaluateExpression } from '../utils/eval';
 import { Display } from './Display';
 import { KeyButton } from './KeyButton';
