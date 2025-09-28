@@ -4,10 +4,10 @@
 
 @layer base {
   html, body, #root {
-    @apply h-full;
+    @apply h-full scroll-smooth;
   }
   body {
-    @apply bg-pastel-surface dark:bg-pastel-darkSurface text-slate-900 dark:text-slate-100 antialiased transition-colors duration-300;
+    @apply bg-white dark:bg-black text-slate-900 dark:text-slate-100 antialiased transition-colors duration-300;
   }
 }
 
