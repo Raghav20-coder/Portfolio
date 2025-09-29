@@ -1,4 +1,5 @@
-import { FormEvent, useState } from 'react';
+import { useState } from 'react';
+import type { FormEvent } from 'react';
 
 export function Contact() {
   const [status, setStatus] = useState<'idle'|'sending'|'sent'>('idle');
@@ -90,7 +91,7 @@ export function Contact() {
             </div>
 
             <div className="grid gap-6">
-              {contactMethods.map((method, index) => (
+              {contactMethods.map((method) => (
                 <a
                   key={method.title}
                   href={method.href}

@@ -51,7 +51,7 @@ export function Skills() {
 
         {/* Skill Categories */}
         <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-6 mb-16">
-          {skillCategories.map((category, index) => (
+          {skillCategories.map((category) => (
             <div key={category.title} className="group">
               <div className="card p-6 text-center hover:shadow-xl transition-all duration-300 group-hover:-translate-y-2">
                 <div className="text-4xl mb-4">{category.icon}</div>
@@ -79,7 +79,7 @@ export function Skills() {
             Technical Proficiency
           </h3>
           <div className="grid md:grid-cols-2 gap-8">
-            {skills.map((skill, index) => (
+            {skills.map((skill) => (
               <div key={skill.name} className="space-y-3">
                 <div className="flex justify-between items-center">
                   <span className="font-semibold text-slate-900 dark:text-white">{skill.name}</span>
